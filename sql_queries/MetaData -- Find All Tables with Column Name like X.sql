@@ -1,6 +1,11 @@
 
 /********************************************************************************************
-Declare loop start, using 5 to skip system databases like master, tempdb, etc
+Tried to write a script to help searching large servers for any table that has a user 
+defined column name. For instance if you want all tables with a CustomerID and want to know
+some basic information about the tables and that column in the table you could use this 
+script to do that.
+
+Declare loop start, using 5 to skip system databases like master, tempdb, etc.
 *********************************************************************************************/
 declare @i int = 5
 
