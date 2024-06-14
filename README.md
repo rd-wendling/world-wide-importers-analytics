@@ -26,3 +26,5 @@ So far this dashboard contains three tabs:
      This shows the performace of each individual sales-person, looking at both revenue generated and sales made, over the user defined time period.
      
      ![Screenshot1](assets/dashboard-screenshots/sales-person-performance.png)
+
+
