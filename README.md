@@ -9,3 +9,8 @@ According to the Wide World Importers documentation:
 > "WideWorldImporters is a sample for SQL Server and Azure SQL Database. It showcases database design, as well as how to best leverage SQL Server features in a database. WideWorldImporters is a wholesale company. Transactions and real-time analytics are performed in the database WideWorldImporters. The database WideWorldImportersDW is an OLAP database, focused on analytics.
 
 A backup file for this database can be downloaded [here.](https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak)
+
+## Dashboard
+So far this dashboard contains three tabs:
+  1. **Order Volume and Revenue:**
+     This shows Total Sales made and Total Revenue generated with the option to drill down to the Invoice Date, Invoice Week, or Invoice Month level. A user can also adjust the time period the chart covers by using the Invoice Date slider.
