@@ -20,14 +20,14 @@ select
 
 		i.InvoiceDate
 	,	dateadd(d, 1 - datepart(weekday, i.InvoiceDate), i.InvoiceDate)								as InvoiceWeekStart
-	,	dateadd(d, 1, eomonth(i.InvoiceDate, -1))													as InvoiceMonthStart
+	,	dateadd(d, 1, eomonth(i.InvoiceDate, -1))										as InvoiceMonthStart
 	,	o.SalespersonPersonID
-	,	p.FullName																					as SalesPerson
+	,	p.FullName														as SalesPerson
 	,	il.StockItemID
 	,	i.InvoiceID																	
-	,	sum(il.Quantity)																			as QuantitySold
-	,	sum(il.ExtendedPrice)																		as Revenue
-	,	sum(il.LineProfit)																			as Profit
+	,	sum(il.Quantity)													as QuantitySold
+	,	sum(il.ExtendedPrice)													as Revenue
+	,	sum(il.LineProfit)													as Profit
 
 from WideWorldImporters.Sales.InvoiceLines il
 
