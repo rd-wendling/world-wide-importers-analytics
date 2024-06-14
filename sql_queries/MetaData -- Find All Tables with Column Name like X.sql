@@ -91,7 +91,7 @@ begin
 			and ic.index_id = i.index_id
 
 		where 1=1
-			and c.name like ''%InventoryLegID%''								-- Uncomment to help find tables/cols with column names containing input string(s)
+			and c.name like ''%CustomerID%''								-- Uncomment to help find tables/cols with column names containing input string(s)
 		--	and ic.column_id is not null							-- Uncomment to only return columns that are indexed
 		'
 		
