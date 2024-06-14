@@ -23,7 +23,9 @@ Grab Max and Min Cold Room Temp ID based on Date Parameters
 	smaller and quicker. If it works the code will move on, if not it will try again on
 	the version history tables. Since between is inclusive we not only filter where a
 	date is between ValidFrom and ValidTo we also use min/max functions to get the desired
-	single interger ID outputs. 
+	single interger ID outputs. In this case we know the start and end dates are not
+	in the active table, only because we hardcoded them. Still wrote the script as if
+	our date parameters were dynamic and we might not be sure of this 100% of the time.
 *******************************************************************************************/
 
 set @min_coldRoomTempID = (
