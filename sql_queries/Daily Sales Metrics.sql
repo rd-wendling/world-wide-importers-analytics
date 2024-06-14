@@ -5,7 +5,9 @@ Author: Ryan W.
 Date: 2024-06-13
 
 Goal: Get data on sales made, items sold, revenue and profit per sales-person,
-	  product, invoice date.
+      product, invoice date. Written to pull in data in real time, so each day
+      will pull in data since last run. Since data is static, to achieve this
+      I am pretending the current year is 2015.
 ********************************************************************************/
 
 declare @end_date   date = getdate()
