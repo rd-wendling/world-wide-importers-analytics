@@ -14,3 +14,15 @@ A backup file for this database can be downloaded [here.](https://github.com/Mic
 So far this dashboard contains three tabs:
   1. **Order Volume and Revenue:**
      This shows Total Sales made and Total Revenue generated with the option to drill down to the Invoice Date, Invoice Week, or Invoice Month level. A user can also adjust the time period the chart covers by using the Invoice Date slider.
+     
+     ![Screenshot1](assets/dashboard-screenshots/order-volume-and-revenue.png)
+
+  2. **Profit per Order:**
+     This shows Profit per Order of each individual product for sale, the Profit per Order by Day of Week of the sale, and a time-series view of Profit per Order over time (which can be drilled down to Invoice Month, Invoice Week, or Invoice Date).
+     
+     ![Screenshot1](assets/dashboard-screenshots/profit-per-order.png)
+
+  3. **Sales-person Performace:**
+     This shows the performace of each individual sales-person, looking at both revenue generated and sales made, over the user defined time period.
+     
+     ![Screenshot1](assets/dashboard-screenshots/sales-person-performance.png)
