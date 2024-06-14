@@ -1,2 +1,11 @@
-# world-wide-importers-analytics
-SQL and PowerBI practice using fake company data 
+# Wide World Importers Analytics
+SQL and PowerBI practice using fake company data on Wide World Importers.
+
+## Data
+This project uses sample data on a fake company, WideWorldImporters, which Microsoft provides for free and can be easily imported into a SQL Server database for personal use. 
+
+According to the Wide World Importers documentation:
+
+> "WideWorldImporters is a sample for SQL Server and Azure SQL Database. It showcases database design, as well as how to best leverage SQL Server features in a database. WideWorldImporters is a wholesale company. Transactions and real-time analytics are performed in the database WideWorldImporters. The database WideWorldImportersDW is an OLAP database, focused on analytics.
+
+A backup file for this database can be downloaded [here.](https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak)
