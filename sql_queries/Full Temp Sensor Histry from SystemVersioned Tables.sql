@@ -15,7 +15,7 @@ Grab Max and Min Cold Room Temp ID based on Date Parameters
 
 	Getting these IDs so we can filter the select we're using later into our unioned
 	full history table. Doing it this way because the ColdRoomTemperatureID is an indexed
-	column so it will be faster to filter on this than in the ValidFrom/ValidTo columns.
+	column so it will be faster to filter on this than on the ValidFrom/ValidTo columns.
 	This dataset is so small it doesn't make much functional difference, but I have run
 	into situations in the past where it certainly does. 
 
