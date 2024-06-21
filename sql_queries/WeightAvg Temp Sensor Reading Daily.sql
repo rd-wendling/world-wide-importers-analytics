@@ -7,8 +7,8 @@ Considerations:
 	- Need to account for differences between reading times when calculation the avg.
 *******************************************************************************************/
 
-declare @end_date   date = '2016-03-10'
-	,	@start_date date = '2015-12-30'
+declare @end_date date = '2016-03-10'
+   ,    @start_date date = '2015-12-30'
 
 	
 
@@ -20,7 +20,7 @@ duration between readings by getting the next reading datetime
 (
 select 
 
-		ct.ColdRoomSensorNumber
+	ct.ColdRoomSensorNumber
     ,	ct.RecordedWhen
     ,	ct.Temperature
     ,	lead(ct.RecordedWhen) over (partition by ct.ColdRoomSensorNumber order by ct.RecordedWhen)	as NextRecordedWhen
@@ -40,7 +40,7 @@ durations as
 	select
 
 			fh.ColdRoomSensorNumber
-		,	cast(fh.RecordedWhen as date)										as RecordDate
+		,	cast(fh.RecordedWhen as date)						as RecordDate
 		,	fh.Temperature
 		,	isnull(datediff(second, fh.RecordedWhen, fh.NextRecordedWhen), 0)	as DurationSeconds
 
@@ -55,16 +55,16 @@ Final Daily Readout showing Weight Avgerage Temp Reading of each sensor
 *******************************************************************************************/
 select
 
-		d.ColdRoomSensorNumber
+	d.ColdRoomSensorNumber
     ,	d.RecordDate
     ,	sum(cast(d.DurationSeconds as float) * d.Temperature) / sum(d.DurationSeconds)	as WeightedAvgTemperature
 
 from durations d
 
 group by
-		d.ColdRoomSensorNumber
+	d.ColdRoomSensorNumber
     ,	d.RecordDate
 
 order by
-		d.ColdRoomSensorNumber
+	d.ColdRoomSensorNumber
     ,	d.RecordDate
